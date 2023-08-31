@@ -20,10 +20,19 @@
 
 .cards .cards-card-image {
   line-height: 0;
+  overflow: hidden;
 }
 
 .cards .cards-card-body > *:first-child {
   margin-top: 0;
+}
+
+.cards > ul > li p{
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  display: -webkit-box;
 }
 
 .cards > ul > li img {
@@ -32,3 +41,7 @@
   object-fit: cover;
 }
 
+.cards > ul > li:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
